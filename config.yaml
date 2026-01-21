@@ -1,0 +1,22 @@
+# config.yaml - Configuration Mooltiroute
+
+server:
+  host: "127.0.0.1"    # Bind uniquement localhost pour sécurité
+  port: 8888
+
+webshare:
+  host: "p.webshare.io"
+  port: 80
+  # Credentials via env vars (recommandé) ou directement ici
+  username: "${WEBSHARE_USER}"
+  password: "${WEBSHARE_PASS}"
+
+# Section optionnelle - supprimer ou commenter si pas de corporate proxy
+# corporate_proxy:
+#   host: "proxy.company.com"
+#   port: 8080
+#   username: "${CORP_PROXY_USER}"
+#   password: "${CORP_PROXY_PASS}"
+
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
